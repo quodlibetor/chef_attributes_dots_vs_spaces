@@ -6,6 +6,10 @@ There are only three important files:
     recipes/using_dots.rb
     recipes/using_strings.rb
 
+Running `kitchen test --parallel --destroy=never` brings up two boxes, one
+using strings for node attribute access, and one using dots for node attribute
+access.
+
 Importantly, the converge fails when using dots, catching my spelling error:
 
     ================================================================================
