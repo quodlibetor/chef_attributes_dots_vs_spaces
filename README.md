@@ -6,7 +6,7 @@ There are only three important files:
     recipes/using_dots.rb
     recipes/using_strings.rb
 
-Importantly, the converge fails when using dots:
+Importantly, the converge fails when using dots, catching my spelling error:
 
     ================================================================================
     Recipe Compile Error in /tmp/kitchen/cookbooks/test_dots/recipes/using_dots.rb
@@ -31,8 +31,8 @@ Importantly, the converge fails when using dots:
       4:  end
       5:
 
-Whereas when using strings the run converges with no warnings, and ends up with
-an empty password:
+Whereas when using strings my spelling error is *not* caught: the run converges
+with no warnings, and ends up with an empty password:
 
     $ kitchen login using_strings
     vagrant@using-strings-ubuntu-1204:~$ cat /etc/admin_config
